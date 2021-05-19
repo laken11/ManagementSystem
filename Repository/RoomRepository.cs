@@ -69,7 +69,7 @@ namespace ManagementSystem.Repository
 
         private void Show(Room room, int index)
         {
-            Console.WriteLine($"{index}. - {room.number}\n - {room.status}");
+            Console.WriteLine($"{index}.- Room numner: {room.number}\n  - Room status: {room.status}");
         }
 
         public Room Find(int number)

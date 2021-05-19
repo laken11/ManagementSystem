@@ -71,8 +71,12 @@ namespace ManagementSystem
                 if (customer.email == email)
                 {
                    Person person =  customer.login(email, password);
-                   Customer user = this.Find(person.email);
-                   return user;
+                   if (person != null)
+                   {
+                        Customer user = Find(person.email);
+                        return user;
+                   }
+                  
                 }
             }
             return null;
