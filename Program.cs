@@ -37,7 +37,7 @@ namespace ManagementSystem
                         string password = Console.ReadLine();
                         bool loggedin = customerManagementService.Login(email, password);
                         if (loggedin) { Console.WriteLine("Login sucessfull"); CustomerMenu(); }
-                        else { Console.WriteLine("Username or password incorrect!"); MainMenu(); int optio = Convert.ToInt32(Console.ReadLine()); HandleMainMenu(optio);  }
+                        else { Console.WriteLine("Username or password incorrect!"); }
                     }
                     else
                     {
@@ -302,7 +302,15 @@ namespace ManagementSystem
                 {
                     MainMenu();
                     int option = Convert.ToInt32(Console.ReadLine());
-                    HandleMainMenu(option);
+                    if (option ==0)
+                    {
+                        flag = false;
+                    }
+                    else
+                    {
+                        HandleMainMenu(option);
+                    }
+                    
                 }
             }
             Main();
