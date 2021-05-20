@@ -14,6 +14,7 @@ namespace ManagementSystem.Services
 
         public Customer Create() 
         {
+            Console.WriteLine("Welcome To Customer Management Service");
             Console.WriteLine("Enter your last name: ");
             string lastName = Console.ReadLine();
             Console.WriteLine("Enter your first name: ");
