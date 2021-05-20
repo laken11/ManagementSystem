@@ -17,6 +17,7 @@ namespace ManagementSystem
                 Console.WriteLine("Welcome to Test hotels!\nEnter 1 to Register;\nAlready have an account, Enter 2 to login;\nEnter 0 to quit");
                 Console.WriteLine("This is good beginning");
                 Console.WriteLine("Very Affordable");
+                Console.WriteLine("best hotel");
             }
 
             void HandleMainMenu(int option)
