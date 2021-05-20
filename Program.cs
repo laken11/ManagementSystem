@@ -167,6 +167,7 @@ namespace ManagementSystem
                         break;
                     case 4:
                         customerManagementService.Create();
+                        Customer();
                         break;
                     case 0:
                         EmployeeMenu();
@@ -309,8 +310,7 @@ namespace ManagementSystem
                     else
                     {
                         HandleMainMenu(option);
-                    }
-                    
+                    }  
                 }
             }
             Main();
