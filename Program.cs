@@ -15,6 +15,7 @@ namespace ManagementSystem
             void MainMenu()
             {
                 Console.WriteLine("Welcome to Test hotels!\nEnter 1 to Register;\nAlready have an account, Enter 2 to login;\nEnter 0 to quit");
+                Console.WriteLine("This is good beginning");
             }
             
             void HandleMainMenu(int option)
@@ -313,7 +314,10 @@ namespace ManagementSystem
                     }  
                 }
             }
-            Main();
+            void newMain();
+            {
+                Console.WriteLine("Welcome to git");
+            }
         }
     }
 }
