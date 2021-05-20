@@ -14,6 +14,7 @@ namespace ManagementSystem.Services
 
         public void Create()
         {
+            Console.WriteLine("Welcome to Employee Mgt Services");
             Console.WriteLine("Enter your last name: ");
             string lastName = Console.ReadLine();
             Console.WriteLine("Enter your first name: ");
