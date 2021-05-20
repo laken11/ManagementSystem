@@ -17,7 +17,7 @@ namespace ManagementSystem
                 Console.WriteLine("Welcome to Test hotels!\nEnter 1 to Register;\nAlready have an account, Enter 2 to login;\nEnter 0 to quit");
                 Console.WriteLine("This is good beginning");
             }
-            
+
             void HandleMainMenu(int option)
             {
                 if (option == 1)
@@ -47,7 +47,7 @@ namespace ManagementSystem
                         Console.WriteLine("Enter your password");
                         string password = Console.ReadLine();
                         bool loggedin = employeeManagementService.Login(email, password);
-                        if (loggedin) { Console.WriteLine("Login sucessfull"); EmployeeMenu();  }
+                        if (loggedin) { Console.WriteLine("Login sucessfull"); EmployeeMenu(); }
                         else { Console.WriteLine("Username or password incorrect"); }
                     }
                 }
@@ -304,14 +304,14 @@ namespace ManagementSystem
                 {
                     MainMenu();
                     int option = Convert.ToInt32(Console.ReadLine());
-                    if (option ==0)
+                    if (option == 0)
                     {
                         flag = false;
                     }
                     else
                     {
                         HandleMainMenu(option);
-                    }  
+                    }
                 }
             }
             void newMain();
